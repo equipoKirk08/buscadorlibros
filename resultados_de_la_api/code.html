@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Courier+Prime&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "surface-tint": "#a73918", "inverse-on-surface": "#f2f0ed", "secondary": "#615e58", "on-secondary-fixed-variant": "#494641", "on-surface": "#1b1c1a", "on-tertiary-fixed-variant": "#004e5a", "surface-variant": "#e4e2df", "background": "#fbf9f6", "secondary-container": "#e7e2da", "on-primary": "#ffffff", "on-surface-variant": "#58423c", "surface-bright": "#fbf9f6", "surface-container-high": "#eae8e5", "on-secondary-fixed": "#1d1b17", "on-primary-fixed": "#3b0900", "on-tertiary-container": "#f8fdff", "on-background": "#1b1c1a", "outline": "#8b716a", "primary-fixed-dim": "#ffb5a0", "tertiary-container": "#008093", "on-primary-fixed-variant": "#862201", "on-error": "#ffffff", "surface-dim": "#dbdad7", "surface": "#fbf9f6", "outline-variant": "#dfc0b7", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#6bd5eb", "secondary-fixed": "#e7e2da", "on-tertiary-fixed": "#001f25", "primary-fixed": "#ffdbd1", "tertiary": "#006575", "inverse-primary": "#ffb5a0", "tertiary-fixed": "#a5eeff", "secondary-fixed-dim": "#cbc6bf", "on-secondary-container": "#67645e", "on-error-container": "#93000a", "on-primary-container": "#fffbff", "inverse-surface": "#30312f", "primary": "#a43716", "surface-container-low": "#f5f3f0", "error-container": "#ffdad6", "error": "#ba1a1a", "surface-container-highest": "#e4e2df", "primary-container": "#c54f2c", "surface-container-lowest": "#ffffff", "surface-container": "#efeeeb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-md": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "margin-md": "2rem", "margin-lg": "3rem", "gutter-lg": "2rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg": ["Newsreader"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"], "headline-sm": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Newsreader"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Newsreader"], "code-sm": ["Courier Prime"] }, "fontSize": { "headline-lg": ["2rem", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "500"}], "body-sm": ["0.8125rem", {"lineHeight": "1.5", "fontWeight": "400"}], "body-md": ["0.9375rem", {"lineHeight": "1.55", "fontWeight": "400"}], "label-sm": ["0.75rem", {"lineHeight": "1.2", "letterSpacing": "0.04em", "fontWeight": "600"}], "display-lg": ["3.5rem", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "400"}], "headline-sm": ["1.25rem", {"lineHeight": "1.4", "fontWeight": "600"}], "body-lg": ["1.0625rem", {"lineHeight": "1.6", "fontWeight": "400"}], "display-lg-mobile": ["2.25rem", {"lineHeight": "1.2", "letterSpacing": "-0.015em", "fontWeight": "400"}], "label-md": ["0.875rem", {"lineHeight": "1.25", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg-mobile": ["1.5rem", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}], "code-sm": ["0.8125rem", {"lineHeight": "1.45", "fontWeight": "400"}] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><img alt="OpenBook Explorer Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrBprWkfwLXvymItI6gXDQwHQhLHVwH1XjbJLcEovfnAjUrldry1qraDO_dIWxj59GzG-uvhU5qEAM5vmcthd0eQuYLP65EWkmY5MlnibTLvZqRgMpPQH2VoZdF2nLwGd8r8vzILhlPSyTCO5LwvqEqP0lA4Rxfz0zm05Jah4s9IyGehxqLs9wuDYatEMj-MYoBlE4B5E8sKxVxNh2-Qyvw1W8A0xu_KxQSyJ7BEAAHV"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">OpenBook Explorer</span><span class="font-label-sm text-label-sm text-secondary truncate">Resultados De La Api</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Search Header Control (Sticky within scroll context) -->
+<section class="px-margin pt-space-sm pb-space-sm bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest rounded-xl p-1.5 shadow-sm">
+<div class="flex items-center justify-center pl-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface focus:outline-none placeholder:text-secondary" id="bookSearchInput" placeholder="Buscar por título, autor o ISBN..." type="text" value="Gabriel García Márquez"/>
+<button aria-label="Limpiar búsqueda" class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-secondary hover:text-on-surface active:scale-95 transition-all" id="clearSearchBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<button class="px-space-sm py-1.5 bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all shadow-sm" type="button">
+<span>Filtrar</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<!-- Active query meta & tag chips -->
+<div class="flex items-center justify-between mt-2 pt-1 overflow-x-auto no-scrollbar gap-space-xs text-secondary font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 flex-nowrap shrink-0">
+<span class="text-secondary">Filtro activo:</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-medium">
+          Autor: G. García Márquez
+          <span class="material-symbols-outlined text-[13px] text-primary cursor-pointer">cancel</span>
+</span>
+</div>
+<span class="shrink-0 text-secondary text-right font-code-sm text-code-sm">v2.openlibrary.org</span>
+</div>
+</section>
+<!-- Query Metadata & Sorting Section -->
+<section class="px-margin pt-space-md pb-space-xs flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between">
+<div>
+<h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">
+          84 resultados
+        </h1>
+<p class="font-body-sm text-body-sm text-secondary">
+          en OpenLibrary API para <span class="italic text-on-surface font-medium">«Gabriel García Márquez»</span>
+</p>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm bg-tertiary-container/10 px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[15px]">database</span>
+<span>230ms</span>
+</div>
+</div>
+<!-- Sorting Filter Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar text-secondary">
+<button class="px-3 py-1.5 rounded-full bg-on-surface text-surface-bright font-label-sm text-label-sm flex items-center gap-1 shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">star</span>
+        Más relevantes
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+        Año de publicación
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[15px]">menu_book</span>
+        Edición
+      </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm flex items-center gap-1 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[15px]">language</span>
+        Idioma: ES
+      </button>
+</div>
+</section>
+<!-- Books Results Grid (Mobile Optimized) -->
+<section class="px-margin py-space-sm flex flex-col gap-space-md">
+<!-- Book 1: Cien años de soledad -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex gap-space-md relative overflow-hidden transition-all duration-200 active:scale-[0.99]">
+<div class="w-24 h-36 shrink-0 rounded-lg overflow-hidden relative shadow-md bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Editorial vintage book cover of One Hundred Years of Solitude featuring an ornate golden butterfly and mystical Colombian tropical flora in terracotta, ochre, and warm bone white tones with classical typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB38iic82IC5YNvANCuHz2QgJK79QnDSMX8JVjt0t1BZFy0sePJShzmhXG1oGRiPBlzIcCz8msnDOJaNnqURBTPHyT1mjz-AL1KTH5vh2qK0Rl2ojm8PKNrRzRihKDO_UlMUI5mtLpCix7EAKThpocQFcaHRI-Xfp7rUQEV0wnqdmsydN9IUEPeEi7yZEvBZU1H_grhZyFxidmUpnOsXSWm_EpkseUGrqN0vPh9fKLr"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/25 via-black/10 to-transparent"></div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+<span>Realismo Mágico</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 leading-tight">
+            Cien años de soledad
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary truncate mt-0.5">
+            Gabriel García Márquez
+          </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary mt-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface font-code-sm text-code-sm">1967</span>
+<span class="truncate">Ed. Sudamericana</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Disponible
+          </span>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 active:bg-primary-container transition-colors shadow-sm" type="button">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Book 2: El amor en los tiempos del cólera -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex gap-space-md relative overflow-hidden transition-all duration-200 active:scale-[0.99]">
+<div class="w-24 h-36 shrink-0 rounded-lg overflow-hidden relative shadow-md bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Vintage book cover for Love in the Time of Cholera depicting a distant steamboat on a misty river in Cartagena with deep sepia tones and warm terracotta accent colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq0xa5Rc3vs_7-NU07u0piCarI5mVcB66XaEt0zSgp0A4kPrMLWA9QLMHbQvXY5Nzjo6Eu__sreYhx0hKjxojxs7YeM61_ltnpnR5VXwTL-mg7EYNvjs2rQWg_ojtb-Kc-9GS0mRwDTpp2QFhaoo5bY3xEG2_sL9LShWlRNH9cJpphge9aLZsDAW68ZnOAW2GklF_6nqYXgigFFCZZPv4OcCciSX-fzynGY7-1usaJ"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/25 via-black/10 to-transparent"></div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[14px]">favorite</span>
+<span>Novela Romántica</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 leading-tight">
+            El amor en los tiempos del cólera
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary truncate mt-0.5">
+            Gabriel García Márquez
+          </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary mt-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface font-code-sm text-code-sm">1985</span>
+<span class="truncate">Ed. Oveja Negra</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Disponible
+          </span>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 active:bg-primary-container transition-colors shadow-sm" type="button">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Book 3: Crónica de una muerte anunciada -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex gap-space-md relative overflow-hidden transition-all duration-200 active:scale-[0.99]">
+<div class="w-24 h-36 shrink-0 rounded-lg overflow-hidden relative shadow-md bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Minimalist literary book jacket design for Chronicle of a Death Foretold with dramatic high-contrast morning shadows, terracotta geometric arches, and clean serif title typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-D7IqIUZYabS_4AK-DwwtKmX3OFRqInFrO3i0Z9ScXwA_kZokTHoU-ztXoFsS8AMg61Qc2jn9Idm0fPX2XM2Sgn7ti4IoduXZPBDBmjNcS4ZbGmrm1U-eSRSNIR9nKBIZKzNFL1P_BH-bPlnIDWxFKyW-Gpr1iaYvtWDylEvgdUKzeTMNIng0Ydm3MuqH7g3UEOY0SKXkMxqXA4vxSNVamXxoQPqf2X5R-lpfBcPg"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/25 via-black/10 to-transparent"></div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[14px]">article</span>
+<span>Crónica Periodística</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 leading-tight">
+            Crónica de una muerte anunciada
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary truncate mt-0.5">
+            Gabriel García Márquez
+          </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary mt-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface font-code-sm text-code-sm">1981</span>
+<span class="truncate">La Oveja Negra</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 1 ejemplar
+          </span>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 active:bg-primary-container transition-colors shadow-sm" type="button">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Book 4: El coronel no tiene quien le escriba -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex gap-space-md relative overflow-hidden transition-all duration-200 active:scale-[0.99]">
+<div class="w-24 h-36 shrink-0 rounded-lg overflow-hidden relative shadow-md bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Editorial book cover for No One Writes to the Colonel showcasing an old post office envelope and a gallant rooster silhouette against warm off-white parchment background with terracotta ink lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUP4GzYTsNBpWJ4CtM8xBnphHi_Jt6m3d2etZ-1SGnJPLqtYsA0WQwuY2YQb43mpi6tal1giMipeurf1KGlffeb-Z9SJJt1JV440exxfnkSth47N2c1qAS8SdXYwoWN_CwRNQ6rEnyeMTDnx2ccD5aZmY_JlCQzpjnmanUj9iXe2Mo3UFQ-JpliZfr8tCumKskUPIusXf84e8tubP-xvO7zzvgGJLK9fGG73f_-Tnh"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/25 via-black/10 to-transparent"></div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+<span>Novela Corta</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 leading-tight">
+            El coronel no tiene quien le escriba
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary truncate mt-0.5">
+            Gabriel García Márquez
+          </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary mt-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface font-code-sm text-code-sm">1961</span>
+<span class="truncate">Aguirre Editor</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Disponible
+          </span>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 active:bg-primary-container transition-colors shadow-sm" type="button">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Book 5: Relato de un náufrago -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex gap-space-md relative overflow-hidden transition-all duration-200 active:scale-[0.99]">
+<div class="w-24 h-36 shrink-0 rounded-lg overflow-hidden relative shadow-md bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Editorial book cover art of The Story of a Shipwrecked Sailor with deep ocean teal waves and a minimalist drifting life raft under harsh Caribbean sunlight with elegant serif headers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2AL6PGdzYZoWWQdQOylr42M5j_R7t8ecBmC51wxec2PQ_6bjUH9_Y-qoNY0u9ao0rQI5gBwNOMfCjzKJ29dnfNRDd7380YhWbWqVXAuKCPKSkA2dswo_YswFtV7DHyGNdh0evQ_bakkrVguXBI89dC488xq0Py8r3MdDeFcIrR5Y3PkhhQL8OfjxGftvzvqqrBCileztmV8eUk27pB_Sz1oUyE0Um4NmOg-qeNYuX"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/25 via-black/10 to-transparent"></div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[14px]">sailing</span>
+<span>Testimonial</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 leading-tight">
+            Relato de un náufrago
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary truncate mt-0.5">
+            Gabriel García Márquez
+          </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary mt-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface font-code-sm text-code-sm">1970</span>
+<span class="truncate">Tusquets Editores</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Disponible
+          </span>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 active:bg-primary-container transition-colors shadow-sm" type="button">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Book 6: Doce cuentos peregrinos -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex gap-space-md relative overflow-hidden transition-all duration-200 active:scale-[0.99]">
+<div class="w-24 h-36 shrink-0 rounded-lg overflow-hidden relative shadow-md bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Artistic book cover for Strange Pilgrims with 12 subtle interconnected constellation stars on a warm ivory paper backdrop with terracotta accent framing and refined typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkrSID3OdhuuwEj97Y3DUf8c7P6j-eVAdJQLNxlY22o6-SQIzBTqGzXDJFzGeoIzyAd5HfWtaWUPIIzIpoNkBHL4fZShPRvh8sGF-I_blX66q_EmSqsbRywIROd2s_8nWzjIKOAdNQC7Lds2mhbXUiMCsymvGBNsxWJv6tlniG6LXW3DhQoQ8Klh2oEuyEjsPrfa6-qWN0B58Z3e6ThVjMLViGNd1P9dMvWuUayCWU"/>
+<div class="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/25 via-black/10 to-transparent"></div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[14px]">collections_bookmark</span>
+<span>Relatos Cortos</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 leading-tight">
+            Doce cuentos peregrinos
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary truncate mt-0.5">
+            Gabriel García Márquez
+          </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary mt-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface font-code-sm text-code-sm">1992</span>
+<span class="truncate">Mondadori</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Disponible
+          </span>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 active:bg-primary-container transition-colors shadow-sm" type="button">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Interactive API Snapshot Console (Delight section for researchers/developers) -->
+<section class="mx-margin mt-space-sm p-space-sm bg-surface-container-high rounded-xl">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">code</span>
+<span class="font-semibold text-on-surface">Respuesta API en crudo</span>
+</div>
+<button class="px-2 py-1 bg-surface-container-lowest text-on-surface rounded-md font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-variant transition-colors shadow-sm" id="copyJsonBtn" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span id="copyText">Copiar JSON</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm font-code-sm text-code-sm overflow-x-auto text-on-surface leading-relaxed shadow-sm">
+<span class="text-primary font-bold">{</span><br/>
+        <span class="text-primary">"numFound"</span>: <span class="text-on-surface">84</span>,<br/>
+        <span class="text-primary">"start"</span>: <span class="text-on-surface">0</span>,<br/>
+        <span class="text-primary">"q"</span>: <span class="text-on-surface">"Gabriel García Márquez"</span>,<br/>
+        <span class="text-primary">"docs"</span>: <span class="text-secondary">[ { "title": "Cien años de soledad", "first_publish_year": 1967 } ... ]</span><br/>
+<span class="text-primary font-bold">}</span>
+</div>
+</section>
+<!-- Pagination & Load More Controls -->
+<section class="px-margin pt-space-lg pb-space-md flex flex-col items-center gap-space-sm">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-secondary">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+<span>Mostrando 6 de 84 registros</span>
+<span class="font-medium text-on-surface">· Página 1 de 9</span>
+</div>
+<button class="w-full py-3 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-xl shadow-sm flex items-center justify-center gap-2 hover:bg-surface-container transition-all active:scale-[0.99]" id="loadMoreBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">sync</span>
+<span>Cargar más resultados de la API</span>
+</button>
+</section>
+</div>
+<script>
+  (function() {
+    // Clear Search Input Button
+    var clearBtn = document.getElementById('clearSearchBtn');
+    var searchInput = document.getElementById('bookSearchInput');
+    if (clearBtn && searchInput) {
+      clearBtn.addEventListener('click', function() {
+        searchInput.value = '';
+        searchInput.focus();
+      });
+    }
+
+    // Micro-interaction for Copy JSON
+    var copyBtn = document.getElementById('copyJsonBtn');
+    var copyText = document.getElementById('copyText');
+    if (copyBtn && copyText) {
+      copyBtn.addEventListener('click', function() {
+        var original = copyText.innerText;
+        copyText.innerText = '¡Copiado!';
+        copyBtn.classList.add('bg-primary', 'text-on-primary');
+        setTimeout(function() {
+          copyText.innerText = original;
+          copyBtn.classList.remove('bg-primary', 'text-on-primary');
+        }, 1600);
+      });
+    }
+
+    // Micro-interaction for Load More button simulation
+    var loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', function() {
+        var icon = loadMoreBtn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.classList.add('animate-spin');
+          loadMoreBtn.setAttribute('disabled', 'true');
+          setTimeout(function() {
+            icon.classList.remove('animate-spin');
+            loadMoreBtn.removeAttribute('disabled');
+          }, 800);
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm py-space-xs text-secondary transition-colors duration-150" data-path="inicio-y-busqueda" href="#"><span class="material-symbols-outlined text-[22px]">local_library</span><span class="font-label-sm text-label-sm mt-0.5">Inicio</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm py-space-xs transition-colors duration-150 text-primary font-semibold" data-path="resultados-de-la-api" href="#"><span class="material-symbols-outlined text-[22px]">manage_search</span><span class="font-label-sm text-label-sm mt-0.5">Catálogo</span></a></div></nav></body></html>
